@@ -409,7 +409,7 @@ static inline bool PrvIsEqual(double a, double b)
  * Constructor. The
  */
 BrowserAdapter::BrowserAdapter(NPP instance, GMainContext *ctxt, int16_t argc, char* argn[], char* argv[])
-    : BrowserClientBase("browser", ctxt)
+    : BrowserClientBase("browser-ports", ctxt)
     , AdapterBase(instance, true, true)
     , mScroller(0)
     , mDirtyPattern(0)
