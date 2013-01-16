@@ -235,7 +235,7 @@ NPError AdapterLibInitialize(void)// Called when proxy library is loaded by brow
 const char* AdapterGetMIMEDescription(void)
 {
     TRACE;
-    return "application/x-palm-browser::;";
+    return "application/x-webosports-browser::;";
 }
 
 
@@ -409,7 +409,7 @@ static inline bool PrvIsEqual(double a, double b)
  * Constructor. The
  */
 BrowserAdapter::BrowserAdapter(NPP instance, GMainContext *ctxt, int16_t argc, char* argn[], char* argv[])
-    : BrowserClientBase("browser", ctxt)
+    : BrowserClientBase("browser-ports", ctxt)
     , AdapterBase(instance, true, true)
     , mScroller(0)
     , mDirtyPattern(0)
